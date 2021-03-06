@@ -1,0 +1,335 @@
+.ant-layout-sider {
+    background: #ffffff !important;
+}
+
+.full-logo {
+    max-height: 32px;
+}
+
+.small-logo {
+    max-height: 30px;
+}
+
+.ant-drawer-body {
+    padding: 0 !important;
+}
+
+.header {
+    background: #ffffff !important;
+    padding: 0 !important;
+}
+
+.header .header-right {
+    padding-right: 22px;
+    cursor: pointer;
+}
+
+.header .header-right .notification {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.header .header-right .notification .noti-icon {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.profile-info {
+    display: table;
+}
+
+.profile-info .avatar,
+.profile-info .info {
+    display: table-cell;
+}
+
+.profile-info .avatar {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.profile-info p {
+    margin-bottom: 0 !important;
+}
+
+.dashboard .card {
+    background: #ffffff;
+    padding: 20px;
+}
+
+.dashboard .card p {
+    margin-bottom: 0 !important;
+}
+
+.dashboard .card .card-detail {
+    display: table;
+}
+
+.dashboard .card .card-detail .text,
+.dashboard .card .card-detail .icon {
+    display: table-cell;
+    width: 100%;
+}
+
+.dashboard .card .card-detail .icon {
+    vertical-align: middle;
+}
+
+.dashboard .card .card-detail .icon img {
+    width: 30px;
+}
+
+.dashboard .card .card-detail .text h1 {
+    margin-bottom: 0 !important;
+    font-size: 25px;
+    color: #2978ff;
+}
+
+.dashboard .card .card-detail .text h3 {
+    margin-bottom: 0 !important;
+    color: #2978ff;
+}
+
+.dashboard .chart {
+    margin-top: 16px;
+}
+
+.dashboard .chart .line-chart,
+.dashboard .chart .donough-chart {
+    background: #ffffff;
+    padding: 20px;
+}
+
+@media (max-width: 1199px) {
+    .dashboard-card {
+        margin-bottom: 16px !important;
+    }
+}
+
+.login {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: auto;
+}
+
+.login .layout {
+    text-align: center;
+    /* margin: 0 auto; */
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.login .layout .layout-card {
+    margin: 0 auto;
+    vertical-align: middle;
+    display: table-cell;
+    height: 100%;
+}
+
+.login .layout .layout-card .ant-card {
+    margin: 0 auto;
+}
+
+.login .layout .layout-card .login-submit {
+    float: left;
+    margin-bottom: 0 !important;
+}
+
+.login .layout .layout-card .ant-form-explain {
+    float: left;
+}
+
+.login .layout .layout-card .login-submit-button {
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.login .layout .layout-card .auth-card-width {
+    width: 600px;
+}
+
+.login .layout .layout-card .login-form-forgot-2 {
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .auth-card-width {
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .auth-card-width {
+        width: 350px !important;
+    }
+
+    .login-form-forgot-2 {
+        float: left !important;
+    }
+}
+
+.datatable #table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable #table td,
+.datatable #table th {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.datatable #table tr {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.datatable #table tr:nth-child(even) {
+    background-color: rgba(240, 242, 245, 0.45);
+}
+
+.datatable #table tr:hover {
+    background-color: #e7f7fe;
+}
+
+.datatable #table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ffffff;
+    font-weight: 500;
+}
+
+.datatable .search-column {
+    margin-bottom: 12px;
+}
+
+.datatable .no-image {
+    text-align: center;
+    background: #fff !important;
+    padding: 100px;
+}
+
+.datatable .pagination {
+    text-align: end;
+    margin-top: 15px;
+}
+
+.settings .card {
+    background: #ffffff;
+    padding: 20px;
+}
+
+.settings .title {
+    font-size: 20px;
+    border-bottom: 1px solid #ebedf2;
+    padding-bottom: 16px;
+}
+
+.settings .content {
+    padding-top: 16px;
+}
+
+.settings .content .ant-upload.ant-upload-drag .ant-upload {
+    padding: 5px 0 4px 0 !important;
+}
+
+.settings .setting-header {
+    padding-bottom: 48px !important;
+}
+
+.settings .setting-header .header-title {
+    font-size: 20px;
+    float: left;
+}
+
+.settings .setting-header .action {
+    float: right;
+}
+
+.main-layout {
+    margin: 24px 16px;
+    min-height: 850px !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-danger {
+    color: #d63737;
+}
+
+.action-icon i {
+    font-size: 20px;
+}
+
+hr {
+    border: 1px solid #efebeb;
+}
+
+.capitalize-letter {
+    text-transform: capitalize;
+}
+
+.sub-header-title {
+    display: table;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.sub-header-title .sub-header-name,
+.sub-header-title .sub-header-action {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sub-header-title .sub-header-name {
+    font-weight: 600;
+}
+
+.ant-skeleton-title {
+    display: none;
+}
+
+.large-skeleton .ant-skeleton-paragraph {
+    margin-top: 12px !important;
+    padding: 0 12px !important;
+}
+
+.ant-form-item {
+    margin-bottom: 6px !important;
+    padding-bottom: 4px !important;
+}
+
+.profile-pic .ant-upload.ant-upload-select-picture-card {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto;
+    border: unset;
+}
+

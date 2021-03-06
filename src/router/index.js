@@ -1,25 +1,57 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import $ from 'jquery'
+
+Vue.use(VueRouter)
+
+const checkToken = (to, from, next) => {
+  let token = localStorage.getItem('token');
+  if (token === 'undefined' || token === null || token === '') {
+    next('/login');
+  } else {
+    next();
+  }
+};
+
+const tokenActive = (to, from, next) => {
+  let token = localStorage.getItem('token');
+  if (token === 'undefined' || token === null || token === '') {
+    next();
+  } else {
+    next('/');
+  }
+};
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: '/', component: () => import('../views/products/products'),
+    redirect: '/products',
+    children: [
+      // dashboard
+      { path: '/products', component: () => import('../views/products/products') },
+    ],
+    beforeEnter(to, from, next) {
+      checkToken(to, from, next);
+    }
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/auth/Login.vue'),
+    beforeEnter(to, from, next) {
+      tokenActive(to, from, next);
+    }
+  },
+];
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
-})
+});
+
+router.afterEach(() => {
+  $('#preloader').hide();
+});
 
 export default router
